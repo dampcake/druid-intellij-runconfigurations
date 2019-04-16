@@ -1,0 +1,11 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Middle Manager" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="org.apache.druid.cli.Main" />
+    <module name="druid-services" />
+    <option name="PROGRAM_PARAMETERS" value="server middleManager" />
+    <option name="VM_PARAMETERS" value="-Ddruid.zk.service.host=localhost -Duser.timezone=UTC -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/tmp/druid/middlemanager -Djava.util.logging.manager=org.apache.logging.log4j.jul.LogManager -Dlog4j.configurationFile=$PROJECT_DIR$/core/src/main/resources/log4j2.debug.xml -Ddruid.worker.capacity=2 -Ddruid.indexer.task.baseDir=/tmp/druid/middlemanager/ -Ddruid.indexer.storage.type=metadata -Ddruid.metadata.storage.type=mysql -Ddruid.metadata.storage.connector.connectURI=jdbc:mysql://localhost:3306/druid -Ddruid.metadata.storage.connector.user=root -Ddruid.metadata.storage.connector.password=imply -Ddruid.processing.buffer.sizeBytes=236870912 -Ddruid.processing.numThreads=1 -Ddruid.indexer.task.hadoopWorkingPath=/tmp/druid/middlemanager/hadoop/druid-indexing -Ddruid.extensions.directory=$PROJECT_DIR$/distribution/target/extensions/ -Ddruid.extensions.loadList=&quot;[\&quot;mysql-metadata-storage\&quot;, \&quot;druid-histogram\&quot;,  \&quot;druid-s3-extensions\&quot;, \&quot;druid-kafka-indexing-service\&quot;]&quot; -Ddruid.extensions.hadoopDependenciesDir=$PROJECT_DIR$/distribution/target/hadoop-dependencies/ -Ddruid.indexer.server.maxChatRequests=100 -Ddruid.startup.logging.logProperties=true -Ddruid.indexer.runner.allowedPrefixes=[\&quot;com.metamx\&quot;,\&quot;druid\&quot;,\&quot;io.druid\&quot;,\&quot;user.timezone\&quot;,\&quot;file.encoding\&quot;,\&quot;log4j\&quot;,\&quot;java\&quot;] -Ddruid.peon.mode=remote -Ddruid.storage.storageDirectory=/tmp/druid/localStorage -Ddruid.indexer.runner.javaOpts=-server -Xmx2g -Duser.timezone=UTC -Dfile.encoding=UTF-8 -XX:+ExitOnOutOfMemoryError -Djava.util.logging.manager=org.apache.logging.log4j.jul.LogManager" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

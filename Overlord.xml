@@ -1,0 +1,11 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Overlord" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="org.apache.druid.cli.Main" />
+    <module name="druid-services" />
+    <option name="PROGRAM_PARAMETERS" value="server overlord" />
+    <option name="VM_PARAMETERS" value="-server -Duser.timezone=UTC -Dfile.encoding=UTF-8 -Xmx2048M -Xmx2048M -XX:+UseG1GC -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -XX:+PrintAdaptiveSizePolicy -XX:+PrintReferenceGC -verbose:gc -XX:+PrintFlagsFinal -Djava.util.logging.manager=org.apache.logging.log4j.jul.LogManager -Dorg.jboss.logging.provider=slf4j -Ddruid.host=localhost -Ddruid.extensions.directory=$PROJECT_DIR$/distribution/target/extensions/ -Ddruid.extensions.hadoopDependenciesDir=$PROJECT_DIR$/distribution/target/hadoop-dependencies/ -Ddruid.extensions.loadList=[\&quot;druid-histogram\&quot;,\&quot;mysql-metadata-storage\&quot;] -Ddruid.zk.service.host=localhost -Ddruid.metadata.storage.type=mysql -Ddruid.metadata.storage.connector.connectURI=&quot;jdbc:mysql://localhost:3306/druid&quot; -Ddruid.metadata.storage.connector.user=druid -Ddruid.metadata.storage.connector.password=diurd -Ddruid.emitter=logging -Ddruid.indexer.runner.javaOpts=&quot;-server -Xmx4g -XX:+UseG1GC -XX:MaxGCPauseMillis=100 -XX:MaxDirectMemorySize=6G -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -XX:+PrintAdaptiveSizePolicy -XX:ParallelGCThreads=4 -XX:ConcGCThreads=2 -XX:+PrintReferenceGC -verbose:gc -XX:+PrintFlagsFinal&quot; -Ddruid.indexer.fork.property.druid.processing.numThreads=2 -Ddruid.indexer.fork.property.druid.server.http.numThreads=100 -Ddruid.indexer.fork.property.druid.processing.fifo=true -Ddruid.indexer.runner.type=remote -Ddruid.indexer.fork.property.druid.storage.type=local -Ddruid.indexer.fork.property.druid.storage.storageDirectory=/tmp/localStorage -Ddruid.indexer.queue.startDelay=PT1S -Dlog4j.configurationFile=$PROJECT_DIR$/core/src/main/resources/log4j2.debug.xml" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
